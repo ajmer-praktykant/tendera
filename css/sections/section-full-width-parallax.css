@@ -1,0 +1,99 @@
+.section-full-width-parallax {
+    text-align: center;
+    position: relative;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section-full-width-parallax:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .8);
+    z-index: 0;
+}
+
+.section-full-width-parallax .section__row {
+    position: relative;
+    z-index: 100;
+}
+
+.section-full-width-parallax .section-full-width-parallax__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+}
+
+.section-full-width-parallax .section-full-width-parallax__box {
+    width: 25%;
+    padding: 15px;
+    text-align: left;
+}
+
+@media (max-width: 1200px) {
+    .section-full-width-parallax .section-full-width-parallax__box {
+        width: 33.3333%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-full-width-parallax .section-full-width-parallax__box {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-full-width-parallax .section-full-width-parallax__box {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.section-full-width-parallax .section-full-width-parallax__desc {
+    font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+    .section-full-width-parallax .section-full-width-parallax__desc {
+        display: inline-block;
+    }
+}
+
+.section-full-width-parallax .section-full-width-parallax__desc ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.section-full-width-parallax .section-full-width-parallax__desc h3,
+.section-full-width-parallax .section-full-width-parallax__desc p,
+.section-full-width-parallax .section-full-width-parallax__desc li {
+    margin-bottom: 15px;
+}
+
+.section-full-width-parallax .section-full-width-parallax__desc h3:last-child,
+.section-full-width-parallax .section-full-width-parallax__desc p:last-child,
+.section-full-width-parallax .section-full-width-parallax__desc li:last-child {
+    margin-bottom: 0;
+}
+
+.section-full-width-parallax .section-full-width-parallax__box .section-full-width-parallax__icon {
+    display: flex;
+    align-items: center;
+}
+
+.section-full-width-parallax .section-full-width-parallax__box .section-full-width-parallax__icon > svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+}
+
+.section-full-width-parallax .section-full-width-parallax__box .section-full-width-parallax__icon > svg path {
+    fill: #fff;
+}

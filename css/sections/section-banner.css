@@ -1,0 +1,33 @@
+.section-banner {
+    background-color: #044F19;
+    color: #f2f2f2;
+    padding: 30px 0;
+}
+
+.section-banner .section-banner__columns {
+    display: flex;
+    align-items: center;
+    margin: -15px;
+}
+
+.section-banner .section-banner__column {
+    padding: 15px;
+    width: 50%;
+}
+
+.section-banner .section-banner__column:last-child {
+    display: flex;
+    justify-content: end;
+}
+
+.section-banner .section-banner__column:last-child > img {
+    height: 96px;
+    width: 96px;
+}
+
+@media (max-width: 768px) {
+    .section-banner .section-banner__column:last-child > img {
+        height: 64px;
+        width: 64px;
+    }
+}

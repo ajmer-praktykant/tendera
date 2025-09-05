@@ -1,0 +1,49 @@
+.breadcrumbs {
+    padding: 15px 0;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0,0,0, .1);
+}
+
+@media (max-width: 1200px) {
+    .breadcrumbs {
+        font-size: 12px;
+    }
+}
+
+.breadcrumbs span[typeof="ListItem"] {
+    display: inline-block;
+    margin-right: 15px;
+    padding-right: 15px;
+    position: relative;
+    color: #044F19;
+}
+
+.breadcrumbs span[typeof="ListItem"]:last-child {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.breadcrumbs span[typeof="ListItem"]:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 14px;
+    background-color: #044F19;
+}
+
+@media (max-width: 1200px) {
+    .breadcrumbs span[typeof="ListItem"]:before {
+        font-size: 12px;
+    }
+}
+
+.breadcrumbs span[typeof="ListItem"]:last-child:before {
+    display: none;
+}
+
+.breadcrumbs .current-item {
+    font-weight: 400;
+}

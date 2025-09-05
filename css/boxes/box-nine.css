@@ -1,0 +1,66 @@
+.section-banner-style-nine {
+    text-align: center;
+}
+
+.section-banner-style-nine .section-banner-style-nine__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+}
+
+.section-banner-style-nine .section-banner-style-nine__box {
+    width: 33.3333%;
+    padding: 15px;
+    position: relative;
+    z-index: 100;
+}
+
+@media (max-width : 1200px) {
+    .section-banner-style-nine .section-banner-style-nine__box {
+        width: 50%;
+        padding: 15px;
+    }
+}
+
+@media (max-width : 768px) {
+    .section-banner-style-nine .section-banner-style-nine__box {
+        width: 100%;
+    }
+}
+
+.section-banner-style-nine .section-banner-style-nine__row {
+    margin-bottom: 15px;
+}
+
+.section-banner-style-nine .section-banner-style-nine__row:last-child {
+    margin-bottom: 0;
+}
+
+.section-banner-style-nine .section-banner-style-nine__suptitle {
+    font-size: 12px;
+}
+
+.section-banner-style-nine .section-banner-style-nine__img > a {
+    display: block;
+    overflow: hidden;
+}
+
+.section-banner-style-nine .section-banner-style-nine__img > a > img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.section-banner-style-nine .section-banner-style-nine__img > a:hover > img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.section-banner-style-nine .section-banner-style-nine__desc {
+    font-size: 14px;
+}

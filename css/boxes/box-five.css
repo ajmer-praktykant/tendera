@@ -1,0 +1,55 @@
+.section-banner-style-five {
+    text-align: center;
+}
+
+.section-banner-style-five .section-banner-style-five__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+}
+
+.section-banner-style-five .section-banner-style-five__box {
+    width: 33.3333%;
+    padding: 15px;
+}
+
+@media (max-width : 1200px) {
+    .section-banner-style-five .section-banner-style-five__box {
+        width: 50%;
+    }
+}
+
+@media (max-width : 768px) {
+    .section-banner-style-five .section-banner-style-five__box {
+        width: 100%;
+    }
+}
+
+.section-banner-style-five .section-banner-style-five__img>a,
+.section-banner-style-five .section-banner-style-five__img>img {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.section-banner-style-five .section-banner-style-five__img>a>img,
+.section-banner-style-five .section-banner-style-five__img>img {
+    width: auto;
+    height: 32px;
+    object-fit: contain;
+    object-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-banner-style-five .section-banner-style-five__row {
+    margin-bottom: 15px;
+}
+
+.section-banner-style-five .section-banner-style-five__row:last-child {
+    margin-bottom: 0;
+}
+
+.section-banner-style-five .section-banner-style-five__desc {
+    font-size: 14px;
+}

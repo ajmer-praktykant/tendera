@@ -1,0 +1,295 @@
+.slick-dotted.slick-slider {
+    margin-bottom: 0!important;
+}
+
+.section-hero-two {
+    position: relative;
+}
+
+.section-hero-two .section-hero-two__navigation {
+    position: absolute;
+    left: calc((100% - 1380px) / 2);
+    bottom: 90px;
+    display: inline-block;
+    z-index: 200;
+}
+
+@media (max-width: 1600px) {
+    .section-hero-two .section-hero-two__navigation {
+        left: calc((100% - 1140px) / 2);
+    }
+}
+
+@media (max-width : 1200px) {
+    .section-hero-two .section-hero-two__navigation {
+        left: 30px;
+    }
+}
+
+@media (max-width : 768px) {
+    .section-hero-two .section-hero-two__navigation {
+        left: 15px;
+        bottom: 60px;
+    }
+}
+
+.section-hero-two .section-hero-two__number {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+}
+
+@media (max-width : 768px) {
+    .section-hero-two .section-hero-two__number {
+        font-size: 16px;
+    }
+}
+
+.section-hero-two .home-nav__row {
+    margin-bottom: 15px;
+}
+
+.section-hero-two .home-nav__row:last-child {
+    margin-bottom: 0;
+}
+
+.section-hero-two .section-hero-two__line {
+    width: 5px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.section-hero-two .section-hero-two__slider {
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease;
+}
+
+.section-hero-two .section-hero-two__slider.slick-initialized {
+    visibility: visible;
+    opacity: 1;
+}
+
+.section-hero-two .section-hero-two__slider .animated {
+    transition: all 0.5s ease;
+}
+
+.section-hero-two .section-hero-two__slider [data-animation-in] {
+    opacity: 0;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    transition: opacity 0.5s ease 0.3s;
+}
+
+@-webkit-keyframes zoomInImage {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+}
+
+@keyframes zoomInImage {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    to {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+}
+
+.zoomInImage {
+    -webkit-animation-name: zoomInImage;
+    animation-name: zoomInImage;
+}
+
+@-webkit-keyframes zoomOutImage {
+    from {
+        -webkit-transform: scale3d(1.3333, 1.3333, 1.3333);
+        transform: scale3d(1.3333, 1.3333, 1.3333);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes zoomOutImage {
+    from {
+        -webkit-transform: scale3d(1.3333, 1.3333, 1.3333);
+        transform: scale3d(1.3333, 1.3333, 1.3333);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.zoomOutImage {
+    -webkit-animation-name: zoomOutImage;
+    animation-name: zoomOutImage;
+}
+
+.section-hero-two .section-hero-two__img {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-hero-two .section-hero-two__img:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, .8);
+    z-index: 100;
+    transition: all .5s;
+}
+
+.section-hero-two .section-hero-two__img>img {
+    width: 100%;
+    height: calc(100vh - 145px);
+    object-fit: cover;
+    object-position: center;
+    opacity: 1 !important;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    transition: all 1s ease;
+}
+
+@media (max-width : 1200px) {
+    .section-hero-two .section-hero-two__img>img {
+        height: calc(100vh - 90px);
+    }
+}
+
+.section-hero-two .section-hero-two__bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #113B85;
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    z-index: 200;
+}
+
+@media (max-width : 768px) {
+    .section-hero-two .section-hero-two__bar {
+        padding: 15px;
+        display: none;
+    }
+}
+
+.section-hero-two .section-hero-two__inner {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.section-hero-two .section-hero-two__inner:before,
+.section-hero-two .section-hero-two__inner:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 1px;
+    background-color: #fff;
+}
+
+@media (max-width : 768px) {
+    .section-hero-two .section-hero-two__inner:before,
+    .section-hero-two .section-hero-two__inner:after {
+        width: 30px;
+    }
+}
+
+.section-hero-two .section-hero-two__inner:before {
+    left: -90px;
+}
+
+@media (max-width : 768px) {
+    .section-hero-two .section-hero-two__inner:before {
+        left: -60px;
+    }
+}
+
+.section-hero-two .section-hero-two__inner:after {
+    right: -90px;
+}
+
+@media (max-width : 768px) {
+    .section-hero-two .section-hero-two__inner:after {
+        right: -60px;
+    }
+}
+
+.section-hero-two .section-hero-two__caption {
+    position: absolute;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    left: 0;
+    right: 0;
+    bottom: 90px;
+    z-index: 200;
+    color: #fff;
+}
+
+@media (max-width: 1600px) {
+    .section-hero-two .section-hero-two__caption {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .section-hero-two .section-hero-two__caption {
+        bottom: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-hero-two .section-hero-two__caption {
+        padding: 0 15px;
+    }
+}
+
+.section-hero-two .section-hero-two__row {
+    margin-bottom: 30px;
+    padding-left: 60px;
+}
+
+@media (max-width: 768px) {
+    .section-hero-two .section-hero-two__row {
+        padding-left: 30px;
+    }
+}
+
+.section-hero-two .section-hero-two__row:last-child {
+    margin-bottom: 0;
+}
+
+.section-hero-two .section-hero-two__arrow--prev {
+    transform: rotate(-90deg);
+}
+
+.section-hero-two .section-hero-two__arrow--next {
+    transform: rotate(90deg);
+}

@@ -1,0 +1,77 @@
+.section-full-width {
+    text-align: center;
+}
+
+.section-full-width .section-full-width__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+}
+
+.section-full-width .section-full-width__box {
+    width: 25%;
+    padding: 15px;
+    text-align: left;
+}
+
+@media (max-width: 1200px) {
+    .section-full-width .section-full-width__box {
+        width: 33.3333%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-full-width .section-full-width__box {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-full-width .section-full-width__box {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.section-full-width .section-full-width__desc {
+    font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+    .section-full-width .section-full-width__desc {
+        display: inline-block;
+    }
+}
+
+.section-full-width .section-full-width__desc ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.section-full-width .section-full-width__desc h3,
+.section-full-width .section-full-width__desc p,
+.section-full-width .section-full-width__desc li {
+    margin-bottom: 15px;
+}
+
+.section-full-width .section-full-width__desc h3:last-child,
+.section-full-width .section-full-width__desc p:last-child,
+.section-full-width .section-full-width__desc li:last-child {
+    margin-bottom: 0;
+}
+
+.section-full-width .section-full-width__box .section-full-width__icon {
+    display: flex;
+    align-items: center;
+}
+
+.section-full-width .section-full-width__box .section-full-width__icon > svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+}
+
+.section-full-width .section-full-width__box .section-full-width__icon > svg path {
+    fill: #000;
+}

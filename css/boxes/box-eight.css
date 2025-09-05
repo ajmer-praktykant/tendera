@@ -1,0 +1,94 @@
+.section-banner-style-eight {
+    text-align: center;
+}
+
+.section-banner-style-eight .section-banner-style-eight__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+}
+
+.section-banner-style-eight .section-banner-style-eight__box {
+    width: 33.3333%;
+    padding: 15px;
+}
+
+@media (max-width : 1200px) {
+    .section-banner-style-eight .section-banner-style-eight__box {
+        width: 50%;
+    }
+}
+
+@media (max-width : 768px) {
+    .section-banner-style-eight .section-banner-style-eight__box {
+        width: 100%;
+    }
+}
+
+.section-banner-style-eight .section-banner-style-eight__row {
+    margin-bottom: 15px;
+}
+
+.section-banner-style-eight .section-banner-style-eight__row:last-child {
+    margin-bottom: 0;
+}
+
+.section-banner-style-eight .section-banner-style-eight__suptitle {
+    font-size: 12px;
+}
+
+.section-banner-style-eight .section-banner-style-eight__img {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.section-banner-style-eight .section-banner-style-eight__hover:hover {
+    cursor: pointer;
+}
+
+.section-banner-style-eight .section-banner-style-eight__img > a {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.section-banner-style-eight .section-banner-style-eight__img > img,
+.section-banner-style-eight .section-banner-style-eight__img > a > img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.section-banner-style-eight .section-banner-style-eight__img:hover > a > img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.section-banner-style-eight .section-banner-style-eight__caption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .75);
+    transition: all .5s;
+    opacity: 0;
+    z-index: -100;
+}
+
+.section-banner-style-eight .section-banner-style-eight__img:hover .section-banner-style-eight__caption {
+    opacity: 1;
+    z-index: 100;
+}
+
+.section-banner-style-eight .section-banner-style-eight__desc {
+    font-size: 14px;
+}
