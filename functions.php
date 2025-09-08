@@ -8,7 +8,7 @@ function inzynieria_enqueue_scripts() {
     wp_enqueue_style( 'accordion-css', get_template_directory_uri() . '/css/jquery.accordion.css', array(), null, 'all' );
     wp_enqueue_style( 'aos-css', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), null, 'all' );
     wp_enqueue_style( 'style-css', get_template_directory_uri() . '/style.css', array(), '1.0.30', 'all' );
-    wp_enqueue_style( 'main-css', get_template_directory_uri() . '/css/main.css', array(), '1.0.284', 'all' );
+    wp_enqueue_style( 'main-css', get_template_directory_uri() . '/css/main.css', array(), '1.0.285', 'all' );
     wp_enqueue_style( 'custom-css', get_template_directory_uri() . '/css/style.css', array(), '1.0.291', 'all' );
     wp_enqueue_script('jquery-js', get_template_directory_uri() . '/js/jquery-3.6.0.min.js', array(), null, true );
     wp_enqueue_script('slick-js', get_template_directory_uri() . '/js/slick.min.js', array(), null, true );
