@@ -1,4 +1,6 @@
-<?php get_template_part( 'template-parts/universal', 'content' ); ?>   
+<?php if ( get_the_ID() != 14 ) : ?>
+<?php get_template_part( 'template-parts/universal', 'content' ); ?>
+<?php endif; ?> 
 <section class="section hot-menu">
     <div class="container">
         <div class="hot-menu__columns">
