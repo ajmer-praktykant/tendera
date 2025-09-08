@@ -2,3 +2,155 @@
 @import "sliders.css";
 @import "sections.css";
 @import "boxes.css";
+
+.certificates {
+    & .container {
+        display: grid;
+        gap: 64px;
+        @media (max-width: 768px) { & {
+            gap: 32px;
+        }}
+    }
+    &.is--align-left > .container {
+        text-align: left;
+        justify-items: start;
+    }
+    &.is--align-center > .container {
+        text-align: center;
+        justify-items: center;
+    }
+    &.is--align-right > .container {
+        text-align: right;
+        justify-items: end;
+    }
+    & .is--d1 {
+        font-size: 6rem;
+        line-height: 0.88;
+        letter-spacing: -0.04rem;
+        @media (max-width: 1200px) { & {
+            font-size: 4.5rem;
+        }}
+        @media (max-width: 768px) { & {
+            font-size: 2.5rem;
+        }}
+    }
+    
+    & .is--d2 {
+        font-size: 4rem;
+        line-height: 0.88;
+        letter-spacing: -0.04rem;
+        @media (max-width: 1200px) { & {
+            font-size: 3rem;
+        }}
+        @media (max-width: 768px) { & {
+            font-size: 2rem;
+        }}
+    }
+    
+    & .is--h1 {
+        font-size: 3rem;
+        line-height: 1.1;
+        letter-spacing: -0.02rem;
+        @media (max-width: 1200px) { & {
+            font-size: 2rem;
+        }}
+        @media (max-width: 768px) { & {
+            font-size: 1.75rem;
+        }}
+    }
+    
+    & .is--h2 {
+        font-size: 2.5rem;
+        line-height: 1.14;
+        letter-spacing: -0.02rem;
+        @media (max-width: 1200px) { & {
+            font-size: 1.75rem;
+        }}
+        @media (max-width: 768px) { & {
+            font-size: 1.5rem;
+        }}
+    }
+    
+    & .is--h3 {
+        font-size: 2rem;
+        line-height: 1.16;
+        @media (max-width: 1200px) { & {
+            font-size: 1.5rem;
+        }}
+        @media (max-width: 768px) { & {
+            font-size: 1.25rem;
+        }}
+    }
+    
+    & .is--h4 {
+        font-size: 1.5rem;
+        line-height: 1.18;
+        @media (max-width: 1200px) { & {
+            font-size: 1.25rem;
+        }}
+        @media (max-width: 768px) { & {
+            font-size: 1.125rem;
+        }}
+    }
+    
+    & .is--h5 {
+        font-size: 1.25rem;
+        line-height: 1.2;
+        @media (max-width: 1200px) { & {
+            font-size: 1.125rem;
+        }}
+        @media (max-width: 768px) { & {
+            font-size: 1rem;
+        }}
+    }
+    
+    & .is--h6 {
+        font-size: 1.125rem;
+        line-height: 1.2;
+        @media (max-width: 1200px) { & {
+            font-size: 1rem;
+        }}
+    }
+
+    &.is--mt {
+        margin-top: 96px;
+        @media (max-width: 768px) { & {
+            margin-top: 64px;
+        }}
+    }
+    
+    &.is--mb {
+        margin-bottom: 96px;
+        @media (max-width: 768px) { & {
+            margin-bottom: 64px;
+        }}
+    }
+    
+    &.is--pt {
+        padding-top: 96px;
+        @media (max-width: 768px) { & {
+            padding-top: 64px;
+        }}
+    }
+    
+    &.is--pb {
+        padding-bottom: 96px;
+        @media (max-width: 768px) { & {
+            padding-bottom: 64px;
+        }}
+    }
+    
+    & .section__certificates {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 32px;
+    }
+    
+    & .certificates__item,
+    & .certificates__item > img {
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+        border: 1px solid #ccc;
+        height: 100%;
+    }
+}
