@@ -33,7 +33,7 @@
     <div class="section__row">
         <div class="section section-fifty-fifty-map__content">
             <div class="section-fifty-fifty-map__iframe">
-                <?php the_sub_field('fifty_fifty_map_section_iframe'); ?>
+                <?=get_sub_field('fifty_fifty_map_section_iframe')?>
             </div>
             <div class="container">
                 <div class="section-fifty-fifty-map__columns">
